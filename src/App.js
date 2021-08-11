@@ -15,14 +15,26 @@ function App() {
         <ChakraProvider theme={theme}>
           <NavigationBar />
           <Switch>
-            <Route path="/" exact component={() => <Home />}></Route>
-            <Route path="/about" exact component={() => <About />}></Route>
             <Route
-              path="/services"
+              path="/true-marketing/"
+              exact
+              component={() => <Home />}
+            ></Route>
+            <Route
+              path="/true-marketing/about"
+              exact
+              component={() => <About />}
+            ></Route>
+            <Route
+              path="true-marketing/services"
               exact
               component={() => <Services />}
             ></Route>
-            <Route path="/contact" exact component={() => <Contact />}></Route>
+            <Route
+              path="true-marketing/contact"
+              exact
+              component={() => <Contact />}
+            ></Route>
           </Switch>
           <Footer />
         </ChakraProvider>
