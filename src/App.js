@@ -15,11 +15,7 @@ function App() {
         <ChakraProvider theme={theme}>
           <NavigationBar />
           <Switch>
-            <Route
-              path="/true-marketing"
-              exact
-              component={() => <Home />}
-            ></Route>
+            <Route path="/" exact component={() => <Home />}></Route>
             <Route path="/about" exact component={() => <About />}></Route>
             <Route
               path="/services"
