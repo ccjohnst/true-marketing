@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.js": "/true-marketing/static/js/main.93bf9f0b.chunk.js",
+    "main.js.map": "/true-marketing/static/js/main.93bf9f0b.chunk.js.map",
+    "runtime-main.js": "/true-marketing/static/js/runtime-main.be69c41a.js",
+    "runtime-main.js.map": "/true-marketing/static/js/runtime-main.be69c41a.js.map",
+    "static/js/2.3a33ea25.chunk.js": "/true-marketing/static/js/2.3a33ea25.chunk.js",
+    "static/js/2.3a33ea25.chunk.js.map": "/true-marketing/static/js/2.3a33ea25.chunk.js.map",
+    "index.html": "/true-marketing/index.html",
+    "static/js/2.3a33ea25.chunk.js.LICENSE.txt": "/true-marketing/static/js/2.3a33ea25.chunk.js.LICENSE.txt",
+    "static/media/appdevelopment.fc252dec.png": "/true-marketing/static/media/appdevelopment.fc252dec.png",
+    "static/media/biceps.aa0cc16d.svg": "/true-marketing/static/media/biceps.aa0cc16d.svg",
+    "static/media/brain.37b92574.svg": "/true-marketing/static/media/brain.37b92574.svg",
+    "static/media/cloud.1cd17cee.svg": "/true-marketing/static/media/cloud.1cd17cee.svg",
+    "static/media/digitalcontent.34e686e4.jpg": "/true-marketing/static/media/digitalcontent.34e686e4.jpg",
+    "static/media/digitaltransformation.dd439d5b.webp": "/true-marketing/static/media/digitaltransformation.dd439d5b.webp",
+    "static/media/marketcasestudies.0bb69ac2.jpg": "/true-marketing/static/media/marketcasestudies.0bb69ac2.jpg",
+    "static/media/marketdevelopment.771785d2.jpeg": "/true-marketing/static/media/marketdevelopment.771785d2.jpeg",
+    "static/media/marketing.e571fecf.jpg": "/true-marketing/static/media/marketing.e571fecf.jpg",
+    "static/media/menu.1238890a.svg": "/true-marketing/static/media/menu.1238890a.svg",
+    "static/media/speed.33a21976.svg": "/true-marketing/static/media/speed.33a21976.svg",
+    "static/media/tmlogo.5908c8f9.png": "/true-marketing/static/media/tmlogo.5908c8f9.png",
+    "static/media/webdevelopment.c0323ba7.jpeg": "/true-marketing/static/media/webdevelopment.c0323ba7.jpeg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.be69c41a.js",
+    "static/js/2.3a33ea25.chunk.js",
+    "static/js/main.93bf9f0b.chunk.js"
+  ]
+}
