@@ -27,7 +27,12 @@ const services = [
 ];
 const AllItemCards = () => {
   return (
-    <Grid gridTemplateRows="repeat(7, 1fr)" gap={5} color="cyan.50">
+    <Grid
+      gridTemplateRows={{ base: 'repeat(7, 1fr)', md: '1fr' }}
+      gridTemplateColumns={{ base: '1fr', md: 'repeat(4, 1fr)' }}
+      gap={5}
+      color="cyan.50"
+    >
       {services.map(item => {
         const { serviceName, image, key } = item;
         return (

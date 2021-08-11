@@ -4,10 +4,11 @@ import { Text, Grid, GridItem, Flex } from '@chakra-ui/react';
 const About = () => {
   return (
     <Grid
-      templateRows="5vh minmax(200vh, max-content) max-content"
+      templateRows="auto minmax(200vh, max-content) max-content"
       color="cyan.900"
     >
       <GridItem></GridItem>
+
       <GridItem bg="cyan.200">
         <Flex justify="center" align="center" padding="15px" direction="column">
           <Text paddingTop="10px" marginBottom="10px">

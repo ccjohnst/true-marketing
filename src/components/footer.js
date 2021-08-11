@@ -13,7 +13,9 @@ const Footer = () => {
     >
       <Image src={smallLogo} height="27.62px" width="40.62pxx" />
       <Spacer />
-      <Text size="sm">©2021 True Marketing</Text>
+      <Text alignSelf="center" size="sm">
+        ©2021 True Marketing
+      </Text>
     </Flex>
   );
 };

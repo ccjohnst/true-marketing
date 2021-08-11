@@ -4,7 +4,10 @@ import AllItemCards from '../itemCards';
 
 const Services = () => {
   return (
-    <Grid templateRows="minmax(5vh, auto) minmax(50vh, max-content) minmax(50vh, max-content)">
+    <Grid
+      templateRows="minmax(5vh, auto) minmax(50vh, max-content) minmax(50vh, max-content)"
+      templateColumns="100%"
+    >
       <GridItem></GridItem>
       <GridItem bg="cyan.700" padding="15px">
         <Flex

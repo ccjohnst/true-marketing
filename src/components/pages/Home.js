@@ -15,22 +15,30 @@ import BlurbIcons from '../blurbIcons';
 const Home = () => {
   return (
     <Box fontSize="xl">
-      <Grid templateRows="minmax(5vh, auto) 100vh minmax(100vh, max-content) 100vh ">
+      <Grid
+        templateRows={{
+          base: 'minmax(5vh, auto) 100vh minmax(100vh, max-content) 100vh ',
+          md: 'auto auto auto auto',
+        }}
+        templateColumns="100%"
+      >
+        {/*  */}
         {/* NAVIGATION GRID SECTION */}
         <GridItem></GridItem>
         {/* INTRO GRID SECTION */}
-        <GridItem bg="cyan.700" padding="15px">
+        <GridItem bg={['cyan.700']} padding="15px">
           <Grid
-            templateRows="minmax(33.3vh, 1fr) auto minmax(33.3vh, 1fr)"
-            templateColumns="1fr"
+            templateRows={'minmax(33.3vh, 1fr) auto minmax(33.3vh, 1fr)'}
+            templateColumns={{ base: '1fr', md: '1fr 1fr' }}
             justify="center"
           >
             <GridItem
-              rowStart="1"
-              bgSize="70vw"
-              height="33.3vh"
+              rowStart={{ base: '1', md: '2' }}
+              colStart={{ base: '1', md: '2' }}
+              bgSize={{ base: '70vw', md: '50%' }}
+              height={{ base: '33.3vh' }}
               backgroundImage={clouds}
-              bgPosition="right"
+              bgPosition={{ base: 'right', md: 'center' }}
               bgRepeat="no-repeat"
             ></GridItem>
             <GridItem rowStart="2">
@@ -69,20 +77,21 @@ const Home = () => {
             justify="center"
           >
             <GridItem
-              colStart="1"
-              colEnd="10"
-              rowStart="3"
-              rowEnd="10"
+              colStart={{ base: '1' }}
+              colEnd={{ base: '10' }}
+              rowStart={{ base: '3' }}
+              rowEnd={{ base: '10' }}
               bg="cyan.100"
-              margin="10px"
-              marginBottom="50px"
+              margin={{ base: '10px' }}
+              marginBottom={{ base: '50px' }}
               marginTop="20px"
+              marginLeft={{ md: '150px' }}
             ></GridItem>
             <GridItem
-              colStart="2"
-              colEnd="10"
-              rowStart="3"
-              rowEnd="9"
+              colStart={{ base: '2' }}
+              colEnd={{ base: '10' }}
+              rowStart={{ base: '3' }}
+              rowEnd={{ base: '9' }}
               bg="cyan.300"
               align="center"
               justifyItems="center"
