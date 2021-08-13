@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/true-marketing/static/js/main.3910cf78.chunk.js",
-    "main.js.map": "/true-marketing/static/js/main.3910cf78.chunk.js.map",
+    "main.js": "/true-marketing/static/js/main.ccc8fe3b.chunk.js",
+    "main.js.map": "/true-marketing/static/js/main.ccc8fe3b.chunk.js.map",
     "runtime-main.js": "/true-marketing/static/js/runtime-main.be69c41a.js",
     "runtime-main.js.map": "/true-marketing/static/js/runtime-main.be69c41a.js.map",
     "static/js/2.f0af9316.chunk.js": "/true-marketing/static/js/2.f0af9316.chunk.js",
@@ -25,6 +25,6 @@
   "entrypoints": [
     "static/js/runtime-main.be69c41a.js",
     "static/js/2.f0af9316.chunk.js",
-    "static/js/main.3910cf78.chunk.js"
+    "static/js/main.ccc8fe3b.chunk.js"
   ]
 }
