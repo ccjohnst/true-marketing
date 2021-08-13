@@ -29,7 +29,7 @@ const NavigationBar = props => {
       // pl="10px"
       bg="cyan.700"
       color="cyan.50"
-      position={{ base: 'absolute', md: 'fixed' }}
+      position={{ base: 'fixed', md: 'absolute' }}
       width={{ base: '100vw', md: '100vw' }}
       {...props}
     >
