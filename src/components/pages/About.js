@@ -1,14 +1,23 @@
 import React from 'react';
-import { Text, Grid, GridItem, Flex } from '@chakra-ui/react';
+import { Text, Grid, GridItem, Flex, Heading } from '@chakra-ui/react';
 
 const About = () => {
   return (
     <Grid
-      templateRows="auto minmax(200vh, max-content) max-content"
+      templateRows={{
+        base: 'minmax(20vh, max-content) minmax(100vh, max-content)',
+        md: '20vh minmax(100vh, max-content)',
+      }}
+      templateColumns="auto"
       color="cyan.900"
     >
-      <GridItem></GridItem>
-
+      <GridItem bg="cyan.700">
+        <Flex justify="center" padding="15px" direction="column" height="100%">
+          <Heading color="cyan.50" size="4xl">
+            Learn about us.
+          </Heading>
+        </Flex>
+      </GridItem>
       <GridItem bg="cyan.200">
         <Flex justify="center" align="center" padding="15px" direction="column">
           <Text paddingTop="10px" marginBottom="10px">

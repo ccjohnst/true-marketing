@@ -19,23 +19,35 @@ const NavigationBar = props => {
   return (
     <Flex
       as="nav"
-      align="center"
+      align="stretch"
       justify="space-between"
       wrap="wrap"
-      padding={6}
+      flexGrow="0"
+      // padding={6}
+      p={6}
+      // pr="10px"
+      // pl="10px"
       bg="cyan.700"
       color="cyan.50"
-      position="fixed"
+      position={{ base: 'absolute', md: 'fixed' }}
       width={{ base: '100vw', md: '100vw' }}
       {...props}
     >
-      <Flex align="center" mr={5} width={{ base: '50%', md: '20%' }}>
+      <Flex align="center" width={{ base: '50%', md: '50%' }} marginTop="0">
         <Link as={RouterLink} to="/">
-          <Image src={tmlogo} width={{ base: '50' }}></Image>
+          <Image
+            src={tmlogo}
+            height={{ base: '50%', md: '100%' }}
+            width={{ base: '100%', md: '20%' }}
+          ></Image>
         </Link>
       </Flex>
 
-      <Box display={{ base: 'block', md: 'none' }} onClick={handleToggle}>
+      <Box
+        display={{ base: 'block', md: 'none' }}
+        onClick={handleToggle}
+        alignSelf="center"
+      >
         <Image src={hamburger}></Image>
       </Box>
 
@@ -46,6 +58,7 @@ const NavigationBar = props => {
         alignItems="center"
         justify="end"
         flexGrow={1}
+        p={6}
         mt={{ base: 4, md: 0 }}
         fontSize="xl"
         spacing="24px"

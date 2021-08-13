@@ -14,13 +14,10 @@ import {
 const Contact = () => {
   return (
     <Grid
-      templateRows={
-        'minmax(5vh, auto) minmax(20vh, max-content) minmax(100vh, max-content)'
-      }
+      templateRows={'minmax(20vh, max-content) minmax(100vh, max-content)'}
       templateColumns="100%"
       color="cyan.900"
     >
-      <GridItem></GridItem>
       <GridItem bg="cyan.700">
         <Flex justify="center" padding="15px" direction="column" height="100%">
           <Heading color="cyan.50" size="4xl">
@@ -32,7 +29,7 @@ const Contact = () => {
         <GridItem bg="cyan.50">
           <Grid
             gridTemplateColumns="repeat(10, 10vw)"
-            gridTemplateRows="2vh repeat(8, 12vh) 2vh"
+            gridTemplateRows="minmax(2vh, max-content) repeat(8, minmax(12vh, max-content)) 2vh"
             justify="center"
           >
             <GridItem

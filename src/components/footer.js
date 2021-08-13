@@ -10,6 +10,7 @@ const Footer = () => {
       padding="15px"
       color="white"
       direction="rows"
+      align="center"
     >
       <Image src={smallLogo} height="27.62px" width="40.62pxx" />
       <Spacer />

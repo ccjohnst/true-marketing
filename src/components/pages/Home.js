@@ -11,20 +11,20 @@ import {
 } from '@chakra-ui/react';
 import clouds from '../cloud.svg';
 import BlurbIcons from '../blurbIcons';
+import { Link as RouterLink } from 'react-router-dom';
 
 const Home = () => {
   return (
     <Box fontSize="xl">
       <Grid
         templateRows={{
-          base: 'minmax(5vh, auto) 100vh minmax(100vh, max-content) 100vh ',
-          md: 'auto auto auto auto',
+          base: '100vh minmax(100vh, max-content) 100vh',
+          md: 'auto auto auto',
         }}
         templateColumns="100%"
       >
         {/*  */}
-        {/* NAVIGATION GRID SECTION */}
-        <GridItem></GridItem>
+
         {/* INTRO GRID SECTION */}
         <GridItem bg={['cyan.700']} padding="15px">
           <Grid
@@ -129,7 +129,9 @@ const Home = () => {
                   size="lg"
                   color="cyan.50"
                 >
-                  Contact Us
+                  <Link as={RouterLink} to="/contact">
+                    Contact Us
+                  </Link>
                 </Button>
               </Flex>
             </GridItem>

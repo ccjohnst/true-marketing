@@ -1,5 +1,5 @@
 import React from 'react';
-import { ChakraProvider, theme } from '@chakra-ui/react';
+import { ChakraProvider, theme, Grid, GridItem, Flex } from '@chakra-ui/react';
 import Home from './components/pages/Home';
 import About from './components/pages/About';
 import Services from './components/pages/Services';
@@ -13,14 +13,25 @@ function App() {
     <>
       <Router>
         <ChakraProvider theme={theme}>
-          <NavigationBar />
-          <Switch>
-            <Route path="/" exact component={() => <Home />} />
-            <Route path="/about" exact component={() => <About />} />
-            <Route path="/services" exact component={() => <Services />} />
-            <Route path="/contact" exact component={() => <Contact />} />
-          </Switch>
-          <Footer />
+          <Grid
+            templateRows="minmax(10vh, max-content) 1fr minmax(10vh, auto)"
+            templateColumns="100vw"
+          >
+            <GridItem bg="cyan.700" height="100%">
+              <NavigationBar />
+            </GridItem>
+            <GridItem>
+              <Switch>
+                <Route path="/" exact component={() => <Home />} />
+                <Route path="/about" exact component={() => <About />} />
+                <Route path="/services" exact component={() => <Services />} />
+                <Route path="/contact" exact component={() => <Contact />} />
+              </Switch>
+            </GridItem>
+            <GridItem>
+              <Footer />
+            </GridItem>
+          </Grid>
         </ChakraProvider>
       </Router>
     </>
