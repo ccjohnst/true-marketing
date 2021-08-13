@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.js": "/true-marketing/static/js/main.93bf9f0b.chunk.js",
-    "main.js.map": "/true-marketing/static/js/main.93bf9f0b.chunk.js.map",
+    "main.js": "/true-marketing/static/js/main.d85739b5.chunk.js",
+    "main.js.map": "/true-marketing/static/js/main.d85739b5.chunk.js.map",
     "runtime-main.js": "/true-marketing/static/js/runtime-main.be69c41a.js",
     "runtime-main.js.map": "/true-marketing/static/js/runtime-main.be69c41a.js.map",
-    "static/js/2.3a33ea25.chunk.js": "/true-marketing/static/js/2.3a33ea25.chunk.js",
-    "static/js/2.3a33ea25.chunk.js.map": "/true-marketing/static/js/2.3a33ea25.chunk.js.map",
+    "static/js/2.f3a93dc6.chunk.js": "/true-marketing/static/js/2.f3a93dc6.chunk.js",
+    "static/js/2.f3a93dc6.chunk.js.map": "/true-marketing/static/js/2.f3a93dc6.chunk.js.map",
     "index.html": "/true-marketing/index.html",
-    "static/js/2.3a33ea25.chunk.js.LICENSE.txt": "/true-marketing/static/js/2.3a33ea25.chunk.js.LICENSE.txt",
+    "static/js/2.f3a93dc6.chunk.js.LICENSE.txt": "/true-marketing/static/js/2.f3a93dc6.chunk.js.LICENSE.txt",
     "static/media/appdevelopment.fc252dec.png": "/true-marketing/static/media/appdevelopment.fc252dec.png",
     "static/media/biceps.aa0cc16d.svg": "/true-marketing/static/media/biceps.aa0cc16d.svg",
     "static/media/brain.37b92574.svg": "/true-marketing/static/media/brain.37b92574.svg",
@@ -24,7 +24,7 @@
   },
   "entrypoints": [
     "static/js/runtime-main.be69c41a.js",
-    "static/js/2.3a33ea25.chunk.js",
-    "static/js/main.93bf9f0b.chunk.js"
+    "static/js/2.f3a93dc6.chunk.js",
+    "static/js/main.d85739b5.chunk.js"
   ]
 }
