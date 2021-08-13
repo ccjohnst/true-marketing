@@ -1,5 +1,5 @@
 import React from 'react';
-import { ChakraProvider, theme, Grid, GridItem, Flex } from '@chakra-ui/react';
+import { ChakraProvider, theme, Grid, GridItem } from '@chakra-ui/react';
 import Home from './components/pages/Home';
 import About from './components/pages/About';
 import Services from './components/pages/Services';
@@ -15,7 +15,7 @@ function App() {
         <ChakraProvider theme={theme}>
           <Grid
             templateRows="minmax(10vh, max-content) 1fr minmax(10vh, auto)"
-            templateColumns="100vw"
+            templateColumns="100%"
           >
             <GridItem bg="cyan.700" height="100%">
               <NavigationBar />
