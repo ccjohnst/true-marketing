@@ -23,14 +23,11 @@ const NavigationBar = props => {
       justify="space-between"
       wrap="wrap"
       flexGrow="0"
-      // padding={6}
       p={6}
-      // pr="10px"
-      // pl="10px"
       bg="cyan.700"
       color="cyan.50"
       position={{ base: 'fixed', md: 'absolute' }}
-      width={{ base: '100vw', md: '100vw' }}
+      width={{ base: '100vw', md: '100%' }}
       {...props}
     >
       <Flex align="center" width={{ base: '50%', md: '50%' }} marginTop="0">
@@ -65,27 +62,27 @@ const NavigationBar = props => {
         fontWeight="bold"
       >
         <Text>
-          <Link as={RouterLink} to="/">
+          <Link as={RouterLink} to="/" onClick={() => handleToggle()}>
             Home
           </Link>
         </Text>
         <Text>
           {' '}
-          <Link as={RouterLink} to="/about">
+          <Link as={RouterLink} to="/about" onClick={() => handleToggle()}>
             About
           </Link>
         </Text>
 
         <Text>
           {' '}
-          <Link as={RouterLink} to="/services">
+          <Link as={RouterLink} to="/services" onClick={() => handleToggle()}>
             Services
           </Link>
         </Text>
 
         <Text>
           {' '}
-          <Link as={RouterLink} to="/contact">
+          <Link as={RouterLink} to="/contact" onClick={() => handleToggle()}>
             Contact
           </Link>
         </Text>

@@ -15,7 +15,9 @@ import { Link as RouterLink } from 'react-router-dom';
 
 const Home = () => {
   return (
+    // Container Chakra UI Box conmponent for the Home Page
     <Box fontSize="xl">
+      {/* Container grid within the Home Page, three rows. */}
       <Grid
         templateRows={{
           base: '100vh minmax(100vh, max-content) 100vh',
@@ -27,20 +29,23 @@ const Home = () => {
 
         {/* INTRO GRID SECTION */}
         <GridItem bg={['cyan.700']} padding="15px">
+          {/* Additional grid to control formatting of intro text */}
           <Grid
             templateRows={'minmax(33.3vh, 1fr) auto minmax(33.3vh, 1fr)'}
             templateColumns={{ base: '1fr', md: '1fr 1fr' }}
             justify="center"
           >
+            {/* First additional grid item - clouds background */}
             <GridItem
-              rowStart={{ base: '1', md: '2' }}
+              rowStart={{ base: '1', md: '1' }}
               colStart={{ base: '1', md: '2' }}
-              bgSize={{ base: '70vw', md: '50%' }}
+              bgSize={{ base: '70vw', md: '50%', lg: 'auto' }}
               height={{ base: '33.3vh' }}
               backgroundImage={clouds}
               bgPosition={{ base: 'right', md: 'center' }}
               bgRepeat="no-repeat"
             ></GridItem>
+            {/* Second additional grid item -  */}
             <GridItem rowStart="2">
               <Flex align="center" justify="left" height="100%">
                 <Text fontSize="4xl" color="cyan.900" textAlign="left">
@@ -52,6 +57,7 @@ const Home = () => {
                 </Text>
               </Flex>
             </GridItem>
+            {/* Final additional grid item  */}
             <GridItem rowStart="3" paddingTop="5vh">
               <Flex align="start" justify="left" height="100%">
                 <Text fontSize="xl" text-aign="start" color="cyan.900">

@@ -32,6 +32,7 @@ let blurbs = [
 // Component that renders all blurb objects into BlurbIcons
 const BlurbIcons = () => {
   return (
+    // Container grid for our blurbicons
     <Grid
       gridTemplateRows={{
         base: 'repeat(3, minmax(1fr, max-content))',
@@ -45,6 +46,7 @@ const BlurbIcons = () => {
       gap={5}
       padding={{ base: 'auto', md: '100px' }}
     >
+      {/* Map through all blurb objects using BlurbIcon component  */}
       {blurbs.map(item => {
         const { imageDesc, heading, subHeading, summary } = item;
         return (
@@ -66,6 +68,7 @@ const BlurbIcons = () => {
 const BlurbIcon = ({ imageDesc, heading, subHeading, summary }) => {
   return (
     <GridItem>
+      {/* Container grid for each blurb icon and text */}
       <Grid gridTemplateRows="repeat(4, minmax(10vh, max-content)">
         <Image
           color="cyan.500"

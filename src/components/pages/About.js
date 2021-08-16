@@ -3,6 +3,7 @@ import { Text, Grid, GridItem, Flex, Heading } from '@chakra-ui/react';
 
 const About = () => {
   return (
+    // CSS Grid container for page
     <Grid
       templateRows={{
         base: 'minmax(20vh, max-content) minmax(100vh, max-content)',
@@ -11,6 +12,7 @@ const About = () => {
       templateColumns="auto"
       color="cyan.900"
     >
+      {/* First grid item - intro */}
       <GridItem bg="cyan.700">
         <Flex justify="center" padding="15px" direction="column" height="100%">
           <Heading color="cyan.50" size="4xl">
@@ -18,6 +20,7 @@ const About = () => {
           </Heading>
         </Flex>
       </GridItem>
+      {/* Second grid item - about text */}
       <GridItem bg="cyan.200">
         <Flex justify="center" align="center" padding="15px" direction="column">
           <Text paddingTop="10px" marginBottom="10px">
@@ -78,7 +81,6 @@ const About = () => {
           </Text>
         </Flex>
       </GridItem>
-      <GridItem></GridItem>
     </Grid>
   );
 };

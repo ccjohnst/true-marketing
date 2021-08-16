@@ -4,11 +4,13 @@ import AllItemCards from '../itemCards';
 
 const Services = () => {
   return (
+    // Container grid for services
     <Grid
       templateRows="minmax(5vh, auto) minmax(50vh, max-content) "
       templateColumns="100%"
     >
       <GridItem bg="cyan.700" padding="15px">
+        {/* Intro blurb as Flexbox item */}
         <Flex
           direction="column"
           justify="center"
@@ -24,6 +26,7 @@ const Services = () => {
           <Text fontSize="4xl">Growing businesses around the world.</Text>
         </Flex>
       </GridItem>
+      {/* Grid item to contain services text */}
       <GridItem bg="cyan.50">
         <Flex
           direction="column"
@@ -46,6 +49,7 @@ const Services = () => {
             dedicated to providing you 24/7 marketing support over a wide range
             of regions
           </Text>
+          {/* Component AllItemCards to display all services */}
           <AllItemCards />
         </Flex>
       </GridItem>

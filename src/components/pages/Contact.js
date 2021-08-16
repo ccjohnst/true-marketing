@@ -13,11 +13,13 @@ import {
 } from '@chakra-ui/react';
 const Contact = () => {
   return (
+    // Container grid for contact page
     <Grid
       templateRows={'minmax(20vh, max-content) minmax(100vh, max-content)'}
       templateColumns="100%"
       color="cyan.900"
     >
+      {/* First grid item - intro */}
       <GridItem bg="cyan.700">
         <Flex justify="center" padding="15px" direction="column" height="100%">
           <Heading color="cyan.50" size="4xl">
@@ -26,6 +28,8 @@ const Contact = () => {
         </Flex>
       </GridItem>
       <GridItem>
+        {/* Our second item, with an additional grid item inside it to contain the 
+        contact us form and overlapping background boxes for styling */}
         <GridItem bg="cyan.50">
           <Grid
             gridTemplateColumns="repeat(10, 10vw)"
@@ -60,6 +64,7 @@ const Contact = () => {
                   revolutionise your business. Please feel free to get in touch
                   with us using the form below.
                 </Text>
+                {/* Chakra UI FOrm control components */}
                 <FormControl id="fname" isRequired>
                   <FormLabel>First Name</FormLabel>
                   <Input type="text" />

@@ -4,6 +4,7 @@ import smallLogo from './tmlogosmall.png';
 
 const Footer = () => {
   return (
+    // Flex container for footer
     <Flex
       bg="cyan.700"
       height="100%"
